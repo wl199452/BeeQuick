@@ -1,0 +1,89 @@
+//
+//  BeeQuick.pch
+//  BeeQuick
+//
+//  Created by Mac on 16/12/22.
+//  Copyright © 2016年 Mac. All rights reserved.
+
+
+#ifndef BeeQuick_pch
+#define BeeQuick_pch
+//头文件
+#import <Masonry.h>
+#import "BQShoppingCar.h"
+#import <YYModel.h>
+
+
+
+//宏定义
+
+//通知
+
+//点击商品加减按钮通知
+#define ProductCountIncreaseNotification     @"ProductCountIncreaseNotification"
+#define ProductCountReduceNotification     @"ProductCountReduceNotification"
+
+//购物车商品总数量变化的通知
+#define kShoppingCarTotalCount @"kShoppingCarTotalCount"
+#define ShoppingCarTotalCountChangedNotification @"ShoppingCarTotalCountChangedNotification"
+
+//点击特殊自定义cell  发出通知
+#define kCellView   @"kCellView"
+#define BeeQuickClickCellJumpNotifacation  @"BeeQuickClickCellJumpNotifacation"
+
+//点击更多商品发出通知
+#define HomeFooterViewClickMoreBtnNotifacation @"HomeFooterViewClickMoreBtnNotifacation"
+
+#define DeliveryAddressDidSelectedNotification @"DeliveryAddressDidSelectedNotification"
+
+
+#define SCREEN_BOUNDS  ([UIScreen mainScreen].bounds)
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+#define kTabBarH        49.0f
+#define kStatusBarH     20.0f
+#define kNavigationBarH 44.0f
+
+
+#define WEAKSELF __weak typeof(self) weakSelf = self;
+#define STRONGSELF __weak typeof(weakSelf) strongSelf = weakSelf;
+
+
+//用户偏好设置的key
+#define kPerferenceAdsImageKey @"kPerferenceAdsImageKey"
+
+//颜色相关
+
+#define kMainColor  RGBCOLOR(253, 212, 50)
+#define kClearColor [UIColor clearColor]
+
+#define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+// 16进制颜色（16进制->10进制）
+#define UIColorFromHEX(HexValue) [UIColor colorWithRed:((float)((HexValue & 0xFF0000) >> 16))/255.0 green:((float)((HexValue & 0xFF00) >> 8))/255.0 blue:((float)(HexValue & 0xFF))/255.0 alpha:1.0]
+
+//带有RGBA的颜色设置
+#define COLOR(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+
+
+
+//获取图片
+#define IMAGE(__NAME__) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:__NAME__ ofType:nil]]
+
+/** 打印rect,size,point */
+#ifdef DEBUG
+#define kLogPoint(point)    NSLog(@"%s = { x:%.4f, y:%.4f }", #point, point.x, point.y)
+#define kLogSize(size)      NSLog(@"%s = { w:%.4f, h:%.4f }", #size, size.width, size.height)
+#define kLogRect(rect)      NSLog(@"%s = { x:%.4f, y:%.4f, w:%.4f, h:%.4f }", #rect, rect.origin.x, rect.origin.y, rect.size.width, rect.size.height)
+#endif
+
+
+//修改系统导航栏左侧点击返回的按钮
+
+
+
+
+
+
+
+#endif /* BeeQuick_pch */

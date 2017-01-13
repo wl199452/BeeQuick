@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="commonCell" rowHeight="87" id="h7M-7V-XyJ" customClass="BQOrderIDCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h7M-7V-XyJ" id="8pV-zS-6mi">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="86.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的评价" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqw-Pd-5BH">
+                        <rect key="frame" x="10" y="8" width="50" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="v2_star_on" translatesAutoresizingMaskIntoConstraints="NO" id="ytn-2f-LqY">
+                        <rect key="frame" x="10" y="28" width="25" height="25"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="v2_star_on" translatesAutoresizingMaskIntoConstraints="NO" id="2Yx-DC-Fhj">
+                        <rect key="frame" x="43" y="28" width="25" height="25"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="v2_star_on" translatesAutoresizingMaskIntoConstraints="NO" id="jBT-VM-Jda">
+                        <rect key="frame" x="76" y="28" width="25" height="25"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="v2_star_on" translatesAutoresizingMaskIntoConstraints="NO" id="cDU-Rc-w9p">
+                        <rect key="frame" x="109" y="28" width="25" height="25"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="v2_star_on" translatesAutoresizingMaskIntoConstraints="NO" id="KJN-VY-0Oz">
+                        <rect key="frame" x="142" y="28" width="25" height="25"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好评,水果好新鲜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vja-bU-mAV">
+                        <rect key="frame" x="10" y="62.5" width="83" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jBT-VM-Jda" firstAttribute="leading" secondItem="2Yx-DC-Fhj" secondAttribute="trailing" constant="8" id="Aea-TR-tbe"/>
+                    <constraint firstItem="ytn-2f-LqY" firstAttribute="top" secondItem="Tqw-Pd-5BH" secondAttribute="bottom" constant="5.5" id="N3M-uO-al3"/>
+                    <constraint firstItem="Vja-bU-mAV" firstAttribute="top" secondItem="ytn-2f-LqY" secondAttribute="bottom" constant="9.5" id="Pj1-aE-RgR"/>
+                    <constraint firstItem="Tqw-Pd-5BH" firstAttribute="leading" secondItem="8pV-zS-6mi" secondAttribute="leading" constant="10" id="az9-gR-P73"/>
+                    <constraint firstAttribute="bottom" secondItem="Vja-bU-mAV" secondAttribute="bottom" constant="10" id="dgh-5Y-vLY"/>
+                    <constraint firstItem="KJN-VY-0Oz" firstAttribute="top" secondItem="cDU-Rc-w9p" secondAttribute="top" id="guz-Sc-yId"/>
+                    <constraint firstItem="KJN-VY-0Oz" firstAttribute="leading" secondItem="cDU-Rc-w9p" secondAttribute="trailing" constant="8" id="gw8-pg-qF7"/>
+                    <constraint firstItem="Tqw-Pd-5BH" firstAttribute="top" secondItem="8pV-zS-6mi" secondAttribute="top" constant="8" id="lec-43-JcY"/>
+                    <constraint firstItem="cDU-Rc-w9p" firstAttribute="top" secondItem="jBT-VM-Jda" secondAttribute="top" id="maS-8D-XZU"/>
+                    <constraint firstItem="cDU-Rc-w9p" firstAttribute="leading" secondItem="jBT-VM-Jda" secondAttribute="trailing" constant="8" id="na3-ca-KWX"/>
+                    <constraint firstItem="jBT-VM-Jda" firstAttribute="top" secondItem="2Yx-DC-Fhj" secondAttribute="top" id="nbg-pT-p3R"/>
+                    <constraint firstItem="Vja-bU-mAV" firstAttribute="leading" secondItem="ytn-2f-LqY" secondAttribute="leading" id="vdp-Va-6Ka"/>
+                    <constraint firstItem="2Yx-DC-Fhj" firstAttribute="top" secondItem="ytn-2f-LqY" secondAttribute="top" id="xBm-D9-pcW"/>
+                    <constraint firstItem="ytn-2f-LqY" firstAttribute="leading" secondItem="Tqw-Pd-5BH" secondAttribute="leading" id="yCs-KR-Sgv"/>
+                    <constraint firstItem="2Yx-DC-Fhj" firstAttribute="leading" secondItem="ytn-2f-LqY" secondAttribute="trailing" constant="8" id="zjV-ZA-xDC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="197" y="16"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="v2_star_on" width="25" height="25"/>
+    </resources>
+</document>

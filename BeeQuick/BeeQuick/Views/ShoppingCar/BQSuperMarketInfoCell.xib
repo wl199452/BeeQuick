@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="superMarketInfoCellID" rowHeight="57" id="KGk-i7-Jjw" customClass="BQSuperMarketInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_lighting" translatesAutoresizingMaskIntoConstraints="NO" id="JRx-5e-Q9n">
+                        <rect key="frame" x="8" y="8" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="k97-v5-FF7"/>
+                            <constraint firstAttribute="width" constant="20" id="vUV-qz-EfB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="闪电超市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jU-WT-iyu">
+                        <rect key="frame" x="36" y="10" width="58" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.35159745525727065" alpha="0.88429418103448276" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="v2_notice_dot" translatesAutoresizingMaskIntoConstraints="NO" id="o5a-1H-MDb">
+                        <rect key="frame" x="14" y="36" width="8" height="8"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="SPp-9U-Qkz"/>
+                            <constraint firstAttribute="width" constant="8" id="uSp-fR-pRo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22:00点前满￥30免运费，22:00点后满￥50免运费" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeK-Il-7Xb">
+                        <rect key="frame" x="36" y="32" width="258" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.35159745529999997" alpha="0.88429418100000001" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JRx-5e-Q9n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="06J-zM-djG"/>
+                    <constraint firstItem="zeK-Il-7Xb" firstAttribute="centerY" secondItem="o5a-1H-MDb" secondAttribute="centerY" id="Bwk-Ba-vCj"/>
+                    <constraint firstItem="4jU-WT-iyu" firstAttribute="centerY" secondItem="JRx-5e-Q9n" secondAttribute="centerY" id="FD5-1R-WLL"/>
+                    <constraint firstItem="o5a-1H-MDb" firstAttribute="centerX" secondItem="JRx-5e-Q9n" secondAttribute="centerX" id="FfE-kf-lgf"/>
+                    <constraint firstItem="4jU-WT-iyu" firstAttribute="leading" secondItem="JRx-5e-Q9n" secondAttribute="trailing" constant="8" id="hGu-Rc-AG9"/>
+                    <constraint firstItem="JRx-5e-Q9n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="lf7-K3-zMb"/>
+                    <constraint firstItem="zeK-Il-7Xb" firstAttribute="leading" secondItem="4jU-WT-iyu" secondAttribute="leading" id="liI-SV-6Td"/>
+                    <constraint firstItem="o5a-1H-MDb" firstAttribute="top" secondItem="JRx-5e-Q9n" secondAttribute="bottom" constant="8" id="q0Y-AK-Jk9"/>
+                    <constraint firstAttribute="bottom" secondItem="zeK-Il-7Xb" secondAttribute="bottom" constant="8" id="rwo-TZ-dxj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-189" y="-70"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_lighting" width="20" height="20"/>
+        <image name="v2_notice_dot" width="11" height="11"/>
+    </resources>
+</document>

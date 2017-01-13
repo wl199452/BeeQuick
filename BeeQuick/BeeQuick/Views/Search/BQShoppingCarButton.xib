@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="PMG-PD-B0d" customClass="BQShoppingCarButton">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hym-m1-8q8">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                    <state key="normal" image="v2_shop_empty"/>
+                    <connections>
+                        <action selector="shoppingCarDidClicked:" destination="PMG-PD-B0d" eventType="touchUpInside" id="TqE-Iy-Qnc"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3rL-5f-HjO">
+                    <rect key="frame" x="40" y="0.0" width="20" height="20"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reddot" translatesAutoresizingMaskIntoConstraints="NO" id="22p-sT-uM0">
+                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ikd-6C-0cq">
+                            <rect key="frame" x="1" y="1.5" width="18" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="62P-q8-4Yz"/>
+                        <constraint firstAttribute="bottom" secondItem="22p-sT-uM0" secondAttribute="bottom" id="8cX-eN-Vtx"/>
+                        <constraint firstItem="22p-sT-uM0" firstAttribute="leading" secondItem="3rL-5f-HjO" secondAttribute="leading" id="EGa-7W-7rE"/>
+                        <constraint firstItem="Ikd-6C-0cq" firstAttribute="centerX" secondItem="3rL-5f-HjO" secondAttribute="centerX" id="KhE-Et-mmH"/>
+                        <constraint firstItem="22p-sT-uM0" firstAttribute="top" secondItem="3rL-5f-HjO" secondAttribute="top" id="RHo-dZ-D3h"/>
+                        <constraint firstAttribute="width" constant="20" id="Vdd-FH-cSP"/>
+                        <constraint firstItem="Ikd-6C-0cq" firstAttribute="centerY" secondItem="3rL-5f-HjO" secondAttribute="centerY" id="Ysa-sd-77O"/>
+                        <constraint firstAttribute="trailing" secondItem="22p-sT-uM0" secondAttribute="trailing" id="srh-Xc-Rdt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hym-m1-8q8" secondAttribute="bottom" id="AjQ-F3-Icy"/>
+                <constraint firstItem="3rL-5f-HjO" firstAttribute="top" secondItem="PMG-PD-B0d" secondAttribute="top" id="GdP-8O-61h"/>
+                <constraint firstItem="hym-m1-8q8" firstAttribute="leading" secondItem="PMG-PD-B0d" secondAttribute="leading" id="X5F-Kg-NzS"/>
+                <constraint firstAttribute="trailing" secondItem="hym-m1-8q8" secondAttribute="trailing" id="ZRM-tu-zxw"/>
+                <constraint firstAttribute="trailing" secondItem="3rL-5f-HjO" secondAttribute="trailing" id="ca1-te-ygi"/>
+                <constraint firstItem="hym-m1-8q8" firstAttribute="top" secondItem="PMG-PD-B0d" secondAttribute="top" id="wBa-nI-PYq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="badgeValueLabel" destination="Ikd-6C-0cq" id="2Dw-cW-aAX"/>
+                <outlet property="badgeView" destination="3rL-5f-HjO" id="Nbj-Ng-hpy"/>
+            </connections>
+            <point key="canvasLocation" x="-116" y="212"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="reddot" width="14" height="14"/>
+        <image name="v2_shop_empty" width="90" height="90"/>
+    </resources>
+</document>

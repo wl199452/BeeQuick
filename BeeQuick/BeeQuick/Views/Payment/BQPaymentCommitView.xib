@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BQPaymentCommitView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实付金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84r-do-YmR">
+                    <rect key="frame" x="8" y="15" width="66" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0V-Xi-cqr">
+                    <rect key="frame" x="275" y="0.0" width="100" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Fpk-WO-VLS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="确认付款" backgroundImage="v2_my_avatar_bg">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="commitPayment:" destination="iN0-l3-epB" eventType="touchUpInside" id="LKy-ii-tIG"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥54.60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJ6-oL-YeX">
+                    <rect key="frame" x="82" y="15" width="59" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QJ6-oL-YeX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="L0n-cX-yVm"/>
+                <constraint firstItem="84r-do-YmR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LNI-RG-0RW"/>
+                <constraint firstItem="k0V-Xi-cqr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MTx-5F-m0T"/>
+                <constraint firstAttribute="bottom" secondItem="k0V-Xi-cqr" secondAttribute="bottom" id="PxO-O5-r1V"/>
+                <constraint firstItem="84r-do-YmR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Ykh-Tm-RHQ"/>
+                <constraint firstAttribute="trailing" secondItem="k0V-Xi-cqr" secondAttribute="trailing" id="bgi-3y-2QJ"/>
+                <constraint firstItem="QJ6-oL-YeX" firstAttribute="leading" secondItem="84r-do-YmR" secondAttribute="trailing" constant="8" id="keX-uV-70L"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="totalPriceLabel" destination="QJ6-oL-YeX" id="z0W-hI-MsE"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="-1.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="v2_my_avatar_bg" width="375" height="150"/>
+    </resources>
+</document>

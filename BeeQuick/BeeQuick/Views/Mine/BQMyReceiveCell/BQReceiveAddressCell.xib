@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellId" rowHeight="77" id="KGk-i7-Jjw" customClass="BQReceiveAddressCell">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="维尼的小熊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTf-HG-gg6">
+                        <rect key="frame" x="8" y="16" width="61.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18721796077" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJp-ti-4Zi">
+                        <rect key="frame" x="89.5" y="16" width="76.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人民大会堂 9527办公室" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgn-iz-6If">
+                        <rect key="frame" x="8" y="50.5" width="131" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VKX-Ap-6rf" userLabel="lineView">
+                        <rect key="frame" x="256" y="13" width="1" height="50.5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="GgY-MG-Xur"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaj-0w-tfW" userLabel="editButton">
+                        <rect key="frame" x="277" y="23" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="PqQ-Jz-d66"/>
+                            <constraint firstAttribute="height" constant="30" id="Zjm-0Q-2GJ"/>
+                        </constraints>
+                        <state key="normal" image="v2_address_edit_normal"/>
+                        <state key="highlighted" image="v2_address_edit_highlighted"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cTf-HG-gg6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="2KI-Ng-IHt"/>
+                    <constraint firstItem="UJp-ti-4Zi" firstAttribute="centerY" secondItem="cTf-HG-gg6" secondAttribute="centerY" id="30I-ZD-NQB"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jaj-0w-tfW" secondAttribute="trailing" constant="10" id="5Qa-qR-YZb"/>
+                    <constraint firstItem="jaj-0w-tfW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7ed-B1-MJO"/>
+                    <constraint firstItem="cTf-HG-gg6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="9Ow-O3-NWQ"/>
+                    <constraint firstItem="Wgn-iz-6If" firstAttribute="top" secondItem="cTf-HG-gg6" secondAttribute="bottom" constant="20" id="G5w-YM-Jag"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="VKX-Ap-6rf" secondAttribute="bottom" constant="5" id="KWm-Z3-der"/>
+                    <constraint firstItem="VKX-Ap-6rf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="hDR-Ai-qVF"/>
+                    <constraint firstItem="UJp-ti-4Zi" firstAttribute="leading" secondItem="cTf-HG-gg6" secondAttribute="trailing" constant="20" id="mmy-tA-yEc"/>
+                    <constraint firstItem="Wgn-iz-6If" firstAttribute="leading" secondItem="cTf-HG-gg6" secondAttribute="leading" id="pf1-Ur-p8L"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VKX-Ap-6rf" secondAttribute="trailing" constant="60" id="tA1-a7-5gg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="Wgn-iz-6If" id="Xls-5i-fJg"/>
+                <outlet property="editAddressBtn" destination="jaj-0w-tfW" id="UwK-m8-DP3"/>
+                <outlet property="editButton" destination="jaj-0w-tfW" id="8gT-0y-o9y"/>
+                <outlet property="nameLabel" destination="cTf-HG-gg6" id="ZLg-e8-9Kj"/>
+                <outlet property="telNumLabel" destination="UJp-ti-4Zi" id="zOx-Q4-pXn"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="132.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="v2_address_edit_highlighted" width="20" height="20"/>
+        <image name="v2_address_edit_normal" width="20" height="20"/>
+    </resources>
+</document>
